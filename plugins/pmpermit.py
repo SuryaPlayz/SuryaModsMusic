@@ -17,7 +17,7 @@ async def pmPermit(client: SAMMY, message: Message):
                 return
             await SAMMY.send_message(
                 message.chat.id,
-                "Hi there, This is a music assistant service .\n\n ❗️ Rules:\n   - No chatting allowed\n   - No spam allowed \n\n 👉 **SEND YOUR GROUP INVITE LINK OR USERNAME HERE @SiderzBot IF USERBOT CAN'T JOIN YOUR GROUP.**\n\n ⚠️ Disclamer: If you need any help then join support group :- @SiderzChat\n    - Don't add this user to secret groups.\n   - Don't Share private info here\n\n",
+                "Hi there, This is a music assistant service .\n\n ❗️ Rules:\n   - No chatting allowed\n   - No spam allowed \n\n 👉 **SEND YOUR GROUP INVITE LINK OR USERNAME HERE @Surya_MusicBot IF USERBOT CAN'T JOIN YOUR GROUP.**\n\n ⚠️ Disclamer: If you need any help then join support group :- @SuryaModsChat \n    - Don't add this user to secret groups.\n   - Don't Share private info here\n\n",
             )
             return
 
@@ -52,7 +52,7 @@ async def pmPermiat(client: SAMMY, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("Approoved to PM")
+        await message.reply_text("Approved to PM")
         return
     message.continue_propagation()    
     
